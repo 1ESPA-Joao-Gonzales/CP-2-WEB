@@ -1,0 +1,131 @@
+/* Reset básico do navegador*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Transform só funciona em elementos que são blocados por isso precisamos colocar inline-blocl */
+ul li a {
+  display: inline-block;
+  transition: transform 0.2s ease; /* transição suave */
+}
+ul li a{
+    animation-duration: 1s;
+    animation-name: aparecer;
+    animation-iteration-count:1;
+}
+@keyframes aparecer{
+
+    0%{opacity: 0;
+    transform: translateY(30px);
+    }
+    100%{opacity: 1;}
+}
+/* Usamos o a por que não é um texto em si e sim um link */
+ul li:hover a {
+  color: rgb(240, 103, 5);
+  transform: scale(1.1);
+}
+.logo{
+    transition: 0.5s ease;
+    cursor:pointer;
+}
+ul li:active a{
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+      /* 2 px para direita, 2px para baixo, 5px de desfoque, cor da sombra, último parametrô é opacidade */
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+nav{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  /* Para o menu ficar por cima de todos os elementos */
+  background-color: rgb(255, 255, 255);
+}
+article a{
+    display: inline-block;
+    transition: 0.5s ease;
+
+}
+article a:hover{
+    cursor: pointer;
+    background-color: rgb(240, 103, 5);
+    transform: scale(1.05);
+
+}
+.partePreta{
+  background: linear-gradient( #F5D3C1, rgb(181, 53, 28));
+}
+.menu a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+.menu {
+    /* Remove os marcadores da lista */
+  list-style: none;
+  /* Coloca os itens em um linha */
+  display: flex;
+  justify-content: center;
+  /* Centraliza o conteúdo */
+  gap: 25px;
+  /* Espaçamento entre cada elemento */
+  padding: 15px 0;
+  border: solid, rgb(181, 53, 28), 3px;
+}
+.copy{
+  text-align: center;
+  background-color:rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 5px;
+}
+td::selection,
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection{
+    background-color: rgb(181, 53, 28);
+    color:white;
+}
+th::selection{
+    background-color: white;
+    color: rgb(181, 53, 28);
+}
+input:focus{
+    background-color: rgb(181, 53, 28);
+    color: white;
+}
+/* Muda a cor do texto que fica no input antes de digitar alguma coisa, placeholder */
+input:focus::placeholder{
+    color: white;
+}
+#video:visited{
+    color:rgb(181, 53, 28);
+}
+#comprar{
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.5);
+    transition: 0.5s ease;
+}
+
+#comprar:hover{
+    background-color:#007BFF;
+    transform: scale(1.1);
+}
+#historia p:first-of-type::first-letter {
+    font-size: 50px; 
+    margin-right: 10px;
+    color: rgb(181, 53, 28);
+    
+}
+.botoes{
+    transition: 0.5s ease;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.5);
+    
+}
+.botoes:hover{
+    background-color:#007BFF;
+    transform: scale(1.1);
+}

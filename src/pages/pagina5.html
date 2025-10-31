@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Registrar-se</title>
+    <link rel="stylesheet" href="../css/pagina5.style.css">
+    <link rel="stylesheet" href="../css/efeitos.css">
+</head>
+<header class="partePreta">
+    <a href="../../index.html"> <img src="../assets/imgs/LOGO.png" alt="" class="logo" a > </a> 
+</header>
+
+
+    <nav>
+      <ul class="menu">
+           <li><a href="./pagina4.html">Clube de Vinhos</a></li>
+        <li><a href="./pagina3.html">Sobre Nós</a></li>
+        <li><a href="./pagina5.html">Login/Registrar-se</a></li>
+        <li><a target="_blank" href="https://youtu.be/VqulPvIew1M?si=3JU7fvE3y8piCoZO">Vídeos</a></li>
+        <li><a href="./pagina2.html">Carrinho</a></li>
+        <li><a href="./pagina1.html">Tabela de Harmonização</a></li>
+      </ul>
+    </nav>
+<body>
+    <div class="container"> 
+    <article>
+        <form id="cadastrar" action="">
+            <span>Registrar-se</span>
+            <br>
+            <input type="text" name="nome" placeholder="Nome">
+            <br>
+            <input type="text" name="sobrenome" placeholder="Sobrenome">
+            <br>
+            <label for="aniversario">Data de Nascimento:</label>
+            <br>
+            <input type="date" name="aniversario">
+            <br>
+            <span>Sexo:</span>
+            <br>
+            <input type="radio" name="genero" value="m">
+            <span>Masculino</span>
+            <input type="radio" name="genero" value="f">
+            <span>Feminino</span>
+            <input type="radio" name="genero" value="o">
+            <span>Outro</span>
+            <br><br>
+            <input type="submit" value="Cadastrar" class="botoes">
+        </form>
+    </article>
+    <article>
+        <!-- Method post para a senha não ficar disponivél na URL do site seria 
+         o correto porém como só se tem front a página carrega para uma nova com 
+         uma mensagem de erro, já que é só para teste de front vou deixar em GET-->
+        <form id="login" action="" method="get">
+            <span>Já tem uma conta? Faça login</span>
+            <br>
+            <input type="email" name="email" id="" placeholder="E-mail">
+            <br>
+            <input type="password" name="senha" id="" placeholder="Senha">
+            <input type="submit" value="Entrar" class="botoes">
+          
+        </form>
+    </article>
+    </div>
+<hr class="linhaHorizontal3">
+<footer>
+    <p class="copy" >&copy;Todos os direitos reservados Vinheria Agnello</p>
+</footer>
+</body>
+</html>
