@@ -18,30 +18,95 @@
         <li><a href="./pagina5.html">Login/Registrar-se</a></li>
         <li><a target="_blank" href="https://youtu.be/VqulPvIew1M?si=3JU7fvE3y8piCoZO">Vídeos</a></li>
         <li><a href="./pagina2.html">Carrinho</a></li>
-        <li><a href="./pagina1.html">Tabela de Harmonização</a></li>
+        <li><a href="./pagina1.html">Quiz</a></li>
       </ul>
     </nav>
 <body>
-    <h2 class="titulos">Tabela de harmonização:</h2>
-      <table class="tabelas">
-        <!-- Tag th só para cabeçalhos e tag tr para conteúdo -->
-        <tr>
-          <th style="background-color: rgb(181, 53, 28);">Tipo de vinho</th>
-          <th style="background-color: rgb(181, 53, 28);">Harmoniza com</th>
-        </tr>
-        <tr><td>Espumante Brut</td><td>Entradas leves, queijos frescos, frituras</td></tr>
-        <tr><td>Sauvignon Blanc</td><td>Saladas, peixes, comida japonesa</td></tr>
-        <tr><td>Chardonnay (sem madeira)</td><td>Frango grelhado, risotos leves</td></tr>
-        <tr><td>Chardonnay (com madeira)</td><td>Massas com molho branco, carnes brancas</td></tr>
-        <tr><td>Pinot Noir</td><td>Aves, cogumelos, massas com molho vermelho</td></tr>
-        <tr><td>Merlot</td><td>Carnes magras, pizzas, queijos médios</td></tr>
-        <tr><td>Cabernet Sauvignon</td><td>Carnes vermelhas, cordeiro</td></tr>
-        <tr><td>Malbec</td><td>Churrasco, queijos curados, carnes assadas</td></tr>
-        <tr><td>Vinho do Porto/Moscatel</td><td>Sobremesas, chocolate, frutas secas</td></tr>
-      </table>
+
+
+<h2 class="titulos">Quiz</h2>
+
+<form id="quiz-form">
+  <p class="quiz-intro">
+    Esse quiz tem o objetivo de descobrir a sua cerveja ideal. Responda as perguntas abaixo e nós indicaremos a melhor opção:
+  </p>
+
+  <!-- Pergunta 1 -->
+  <fieldset class="quiz-question">
+    <legend>Pergunta 1: Qual tipo de sabor você prefere?</legend>
+
+    <label class="quiz-option">
+      <input type="radio" name="pergunta1" value="leve"> Leve e refrescante
+    </label>
+    <label class="quiz-option">
+      <input type="radio" name="pergunta1" value="amargo"> Amargo e intenso
+    </label>
+    <label class="quiz-option">
+      <input type="radio" name="pergunta1" value="doce"> Doce e suave
+    </label>
+    <label class="quiz-option">
+      <input type="radio" name="pergunta1" value="frutado"> Frutado e aromático
+    </label>
+  </fieldset>
+
+  <!-- Pergunta 2 -->
+  <fieldset class="quiz-question">
+    <legend>Pergunta 2: Em qual ocasião você mais gosta de beber?</legend>
+
+    <label class="quiz-option">
+      <input type="radio" name="pergunta2" value="churrasco"> Churrasco com amigos
+    </label>
+    <label class="quiz-option">
+      <input type="radio" name="pergunta2" value="jantar"> Jantar especial
+    </label>
+    <label class="quiz-option">
+      <input type="radio" name="pergunta2" value="festas"> Festas e celebrações
+    </label>
+    <label class="quiz-option">
+      <input type="radio" name="pergunta2" value="relaxar"> Relaxar sozinho
+    </label>
+  </fieldset>
+
+  <!-- Pergunta 3 -->
+  <fieldset class="quiz-question">
+    <legend>Pergunta 3: Qual temperatura você prefere a bebida?</legend>
+
+    <label class="quiz-option">
+      <input type="radio" name="pergunta3" value="gelada"> Bem gelada
+    </label>
+    <label class="quiz-option">
+      <input type="radio" name="pergunta3" value="fria"> Fria, mas não trincando
+    </label>
+    <label class="quiz-option">
+      <input type="radio" name="pergunta3" value="ambiente"> Temperatura ambiente
+    </label>
+  </fieldset>
+
+  <!-- Pergunta 4 -->
+  <fieldset class="quiz-question">
+    <legend>Pergunta 4: Qual dessas comidas você prefere acompanhar com bebida?</legend>
+
+    <label class="quiz-option">
+      <input type="radio" name="pergunta4" value="carne"> Carnes vermelhas
+    </label>
+    <label class="quiz-option">
+      <input type="radio" name="pergunta4" value="peixe"> Peixes e frutos do mar
+    </label>
+    <label class="quiz-option">
+      <input type="radio" name="pergunta4" value="massa"> Massas e queijos
+    </label>
+    <label class="quiz-option">
+      <input type="radio" name="pergunta4" value="aperitivos"> Aperitivos e petiscos
+    </label>
+  </fieldset>
+
+  <button type="submit" id="enviar">Enviar Respostas</button>
+</form>
+
 <hr class="linhaHorizontal2">
 <footer>
   <p class="copy" >&copy;Todos os direitos reservados Vinheria Agnello</p>
 </footer>
+<script src="../js/quiz.js"></script>
 </body>
 </html>

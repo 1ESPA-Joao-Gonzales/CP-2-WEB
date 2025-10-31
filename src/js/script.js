@@ -41,3 +41,4 @@ function trocar(cor) {
   footer.style.backgroundColor = corHeader;
 
 }
+
