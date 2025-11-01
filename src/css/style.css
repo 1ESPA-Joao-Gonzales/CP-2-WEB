@@ -35,11 +35,9 @@ h1 {
   /* Espaçamento entre cada elemento */
   padding: 15px 0;
   border: solid, rgb(181, 53, 28), 3px;
-}
-.menu{
   background-color: #b9b9b9ff;
-
 }
+
 .menu a {
   text-decoration: none;
   color: #000000;
