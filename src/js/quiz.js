@@ -27,22 +27,22 @@ document.getElementById("quiz-form").addEventListener("submit", function (event)
 
   // divide igualmente em 16 grupos
   let tipos = [
-    " Pilsen — leve e refrescante, perfeita para churrascos e encontros casuais.",
-    " American Lager — clara e suave, ideal para acompanhar frutos do mar.",
-    " Blonde Ale — equilibrada e frutada, ótima com massas e queijos.",
-    " Weissbier — cremosa e levemente doce, excelente para festas e celebrações.",
-    " Witbier — cítrica e leve, combina com peixes e pratos leves.",
-    " Belgian Ale — aromática e complexa, ideal para relaxar.",
-    " Brown Ale — maltada e encorpada, perfeita com carnes vermelhas.",
-    " Stout — escura e forte, ideal para churrascos e carnes defumadas.",
-    " Porter — com notas de café e chocolate, ótima para noites frias.",
-    " IPA — amarga e aromática, ideal para quem gosta de sabores marcantes.",
-    " APA — equilibrada e cítrica, perfeita com massas e molhos ricos.",
-    " Double IPA — intensa e marcante, para os que buscam potência.",
-    " Saison — frutada e seca, refrescante para dias quentes.",
-    " Golden Ale — leve e dourada, ótima para eventos e comemorações.",
-    " Red Ale — caramelada e doce, perfeita para petiscos e festas.",
-    " India Pale Lager — equilibrada, une leveza da lager com o amargor da IPA."
+    " Schornstein IPA — leve e refrescante, perfeita para churrascos e encontros casuais.",
+    " Roleta Russa IPA — clara e suave, ideal para acompanhar frutos do mar.",
+    " Schornstein All Day — equilibrada e frutada, ótima com massas e queijos.",
+    " Ouropretana American — cremosa e levemente doce, excelente para festas e celebrações.",
+    " Dádiva Abstrax West Coast Double — cítrica e leve, combina com peixes e pratos leves.",
+    " Evermaine — aromática e complexa, ideal para relaxar.",
+    " Cerveja holandesa 8.6 Red — maltada e encorpada, perfeita com carnes vermelhas.",
+    " Trooper Iron Maiden — escura e forte, ideal para churrascos e carnes defumadas.",
+    " Cacau IPA — com notas de café e chocolate, ótima para noites frias.",
+    " Alemã Erdinger Helles — amarga e aromática, ideal para quem gosta de sabores marcantes.",
+    " Solenne — equilibrada e cítrica, perfeita com massas e molhos ricos.",
+    " Dogma — intensa e marcante, para os que buscam potência.",
+    " Motim — frutada e seca, refrescante para dias quentes.",
+    " Mystery — leve e dourada, ótima para eventos e comemorações.",
+    " Locomotive — caramelada e doce, perfeita para petiscos e festas.",
+    " Hell — equilibrada, une leveza da lager com o amargor da IPA."
   ];
 
   // seleciona o grupo
